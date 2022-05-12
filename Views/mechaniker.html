@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>RayoMakween</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--barra de navegacion-->
+    <header>
+        <section class="BarraNavegacion">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div></div>
+                <a class="navbar-brand" href="#">RayoMakween</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link navbar-dark" href="index.html">Inicio</a>
+                        <a class="nav-link navbar-dark" href="Login.html">Iniciar sesion</a>
+                        <a class="nav-link navbar-dark" href="service.html">Servicios</a>
+                        <a class="nav-link navbar-dark" href="contact.html">Contáctanos</a>
+                        <a class="nav-link navbar-dark" href="aboutus.html">Quienes somos</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!--formulario-->
+                <div class="col-4 align-self-center">
+                    <div class="display-4 mb-3 text-center">Agendar a un mecanico</div>
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Seleccione el tecnico:</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Rafael Budu</option>
+                            <option>Manuel Rodriguez</option>
+                            <option>Cristobal Nuñez</option>
+                            <option>Mario Araya</option>
+                            <option>Carlos Ibañez</option>
+                            <option>Daniel Vasquez</option>
+                            <option>Juan Pedro</option>
+                            <option>Alonso Moraga</option>
+                            <option>Alfredo Silva</option>
+                            <option>Diego Muños</option>
+                            <option>Marcelo Hernandez</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Asignado para:</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Neumaticos</option>
+                            <option>Lavado de autos</option>
+                            <option>Mantención</option>
+                            <option>Mecanico</option>
+                            <option>Desabolladura y pintura</option>
+                            <option>Revisión antes de comprar</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputCar">Ingrese el Vehiculo:</label>
+                          <input type="text" class="form-control" id="exampleInputCar">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputMarcCar">Ingrese la Marca del Vehiculo:</label>
+                        <input type="text" class="form-control" id="exampleInputMarcCar">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleDate">Asignar fecha:</label>
+                      <input type="date" id="exampleDate" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleCardPay">Seleccione la tarjeta a pagar:</label>
+                      <select class="form-control" id="exampleCardPay">
+                        <option>MasterCard</option>
+                        <option>Visa</option>
+                        <option>Magna</option>
+                        <option>American Express</option>
+                        <option>Dinners Club International</option>
+                        <option>Banco de Estado</option>
+                        <option>Red Compra</option>
+                      </select>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-success">Pagar</button>
+                      </div>
+                    </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Agendar</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-danger">Limpiar</button>
+                    </form>
+                </div>
+                <!--imagen taller-->
+                <div class="col-8 pt-3">
+                    <div class="card text-white ">
+                        <img class="overflow-hidden w-auto h-auto " src="../complements/TallerM1.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Servicio Garantizado</h5>
+                                <p class="card-text">Seguridad, rapidez, fiablidad <br> Taller Rayo Makween</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Option : Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+        </script>
+</body>
+</html>
