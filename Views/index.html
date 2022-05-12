@@ -27,6 +27,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleSearch"></label>
+                      <input type="search" name="Busqueda" id="exampleSearch" class="form-control">
+                    </div>
+                </form>
                     <div class="navbar-nav">
                         <a class="nav-link navbar-dark" href="index.html">Inicio</a>
                         <a class="nav-link navbar-dark" href="Login.html">Iniciar sesion</a>
@@ -215,7 +221,11 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        let text = "Rafael Budu"
+        let position = text.search("Rafael");
+        document.getElementById("#exampleSearch").innerHTML = position;
+    </script>
     <!-- Option : Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
