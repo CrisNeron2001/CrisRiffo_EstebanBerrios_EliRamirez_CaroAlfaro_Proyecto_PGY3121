@@ -5,10 +5,10 @@ function validarFormulario(formulario){
     if(validarNombre(nombre)==false){
         alert("Debe ingresar un nombre");
     }
-    else if(validarContrasenna(password, re_password)){
+    else if(validarContrasenna(password, re_password) == false){
         alert("Las contraseñas deben coicidirse.");
     }
-    else if(ochoDigitos(password, re_password)){
+    else if(ochoDigitos(password, re_password) < 8){
         alert("Las contraseñas deben ser de ocho digitos.")
     }
     else
