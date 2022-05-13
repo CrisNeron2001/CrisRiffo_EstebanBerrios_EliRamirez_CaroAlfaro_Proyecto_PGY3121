@@ -1,3 +1,18 @@
+function validarFormulario(formulario){
+    var nombre = formulario.form[1].value;
+    var password = formulario.form[2].value;
+    var re_password = formulario.form[3].value;
+    if(validarNombre(nombre)==false){
+        alert("Debe ingresar un nombre");
+    }
+    else if(validarContrasenna(password, re_password)){
+        alert("Las contraseñas deben coicidirse.");
+    }
+    else if(ochoDigitos(password, re_password)){
+        alert("Las contraseñas deben ser de ocho digitos.")
+    }
+}
+
 function validarContrasenna(password, repassword){
     if(password != repassword){
         return false;
