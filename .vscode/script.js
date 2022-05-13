@@ -11,6 +11,10 @@ function validarFormulario(formulario){
     else if(ochoDigitos(password, re_password)){
         alert("Las contraseñas deben ser de ocho digitos.")
     }
+    else
+    {
+        alert("formulario ok!")
+    }
 }
 
 function validarContrasenna(password, repassword){
